@@ -6,7 +6,7 @@ const db = require('./config/connection');
 const route = require('./routes/routes')
 const cookieParser = require('cookie-parser');
 
-const port = process.env.PORT
+const port = process.env.PORT || 4000
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
