@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser())
 
-app.use('/user' , (req,res)=>{
+app.use('/' , (req,res)=>{
     return res.send("Welocome to the URL-Shortner-API now go to postman and check API")
 },  route)
 
